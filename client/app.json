@@ -25,7 +25,7 @@
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "性格 Quick Start",
+    "navigationBarTitleText": "性格 - Quick Start",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
