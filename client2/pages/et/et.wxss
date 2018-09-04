@@ -1,0 +1,47 @@
+/* pages/et/et.wxss */
+
+
+.head-title {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.title-desc {
+  font-size: 16px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.hline {
+  background: blue;
+  width: 3px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.desc {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.content {
+  margin-top: 14px;
+}
+
+.start_test {
+  width: 95%;
+  align-items: center;
+  margin-top: 40px;
+}

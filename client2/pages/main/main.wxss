@@ -1,0 +1,42 @@
+/* pages/main/main.wxss */
+
+.m_but-1 {
+ width: 40%;
+ margin: 15px;
+ float: left;
+}
+.m_but-2 {
+  float: right;
+ width: 40%;
+ margin: 15px;
+}
+.content {
+    background-color: #fffaaa;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.num-size {
+  width: 100%;
+}
+.radio-group {
+  text-align: center;
+}
+radio {
+  margin-right: 30px;
+}
+
+
+.one-content {
+  width: 90%;
+  /* display: flex; */
+  /* justify-content: center; */
+  font-size: 16px;
+  margin: 20px auto 0;
+  
+}
+.one-content-size {
+    height: 270px;
+}

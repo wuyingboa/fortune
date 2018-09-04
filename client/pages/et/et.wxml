@@ -1,0 +1,33 @@
+
+<view class="head-title">
+<text>2018年普通高等学校招生全国统一考试（北京卷）：英语</text>
+</view>
+
+<view class="desc">
+  <view class="hline"></view>
+  <text class="title-desc">试卷难度4.0，满分120分</text>
+</view>
+<view class='content'>
+  <view  class="container"><text>共分为6个部分：</text></view>
+  <view  class="container">
+    <text class="text-left">单项填空</text><text class="text-right">15分</text>
+  </view>
+  <view  class="container">
+    <text class="text-left">完形填空</text><text class="text-right">15分</text>
+  </view>
+  <view  class="container">
+    <text class="text-left">阅读理解</text><text class="text-right">15分</text>
+  </view>
+  <view  class="container">
+    <text class="text-left">悦读理解七选五</text><text class="text-right">15分</text>
+  </view>
+  <view  class="container">
+    <text class="text-left">书面表达一</text><text class="text-right">15分</text>
+  </view>
+  <view  class="container">
+    <text class="text-left">书面表达二</text><text class="text-right">15分</text>
+  </view>
+  
+  
+  <button class='start_test' bindtap='start_test'>开始答题</button>
+</view>

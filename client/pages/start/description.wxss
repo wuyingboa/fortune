@@ -1,0 +1,29 @@
+/* pages/start/description.wxss */
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.description {
+   /* background-color: #fffaaa;*/
+    width: 80%;
+    height: auto;
+    margin: 0, auto;
+    text-align: left;
+    overflow: hidden;
+}
+
+.title_two {
+  text-align: center;
+  width: 100%;
+}
+
+.title_one {
+  text-align: center;
+  width: 100%;
+  color: red;
+  font-size: 30px;
+}

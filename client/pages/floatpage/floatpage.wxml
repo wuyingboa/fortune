@@ -1,0 +1,29 @@
+<view class="fenxiang-box" bindtap="show">
+    <!-- <image bindtap="show" src="/image/icon64_appwx_logo.png" class="fenxiang-btn"></image> -->
+    <view decode="{{true}}"><i data-param="hello">hello </i><i data-param="hello"  bindtap="show">world</i></view>
+    
+</view>
+
+
+
+<view class="sanjiao_up" hidden="{{flag}}" style="top:{{top_tri}};left:{{left_tri}};" ></view>
+<!-- 弹出层内容，其中的“我知道”中绑定让弹出层消失的函数：bindtap="hide" -->
+<view class="modal-box" hidden="{{flag}}" style="top:{{top}};left:{{left}};">
+
+  
+    <view class="modal-body">
+      <view class="modal-content">
+        <!-- <image src="/image/play.png" class="fenxiang"></image> -->
+        
+        <view class="word-mean">
+          <view class="yinbiao">英[this]  美[that]</view>
+          <view class="word-mean-item">pron. 这，这个；这事，这人；这时；下面所说的事；</view>
+          <view class="word-mean-item">adj. 这，这个；这事，这人；这时；下面所说的事；</view>
+          <view class="word-mean-item">adv. 这样地；就是这样；这么地；</view>
+          <view class="favourite" bindtap='favourite'>收藏到词库</view>
+          
+        </view> 
+     </view>
+      
+    </view>
+  </view>

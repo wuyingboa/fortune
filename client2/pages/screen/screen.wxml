@@ -1,0 +1,61 @@
+
+
+      <!-- new function -->
+<view bindtouchstart="vtouchstart" bindtouchend='vtouchend' data-param="demo-text-3" style="background:#E8FFE8;" >
+  <view class='content'>
+        <scroll-view class="question" scroll-x="false" scroll-y="true" style='height:{{qh}}'>
+          <view>
+            <text>考生听到第一句话时，从语言的反问语气可以判断发言者的观点是不支持的——“你认为人们会通过电话告诉你真实的想法吗?”，第二句其实是对第一句话的解释——“没有面对面的接触，你不太可能发掘他们的内心想法，不太可能知道真相“，所以观点是反对的。
+</text>
+          </view>
+          <view>
+            <text>
+　　因为大部分情况下，英文是首句中心句，段落其他部分是支持中心句的内容，所以听到首句就是主要意思，因此这种模式相对简单，但是考生也要能听出表示观点的词，比如赞成(support, be for …,go for… be on the side of…, quite agree with…)，中立( mutual, just so so, you can try it, not the best)，反对( not good, be against…, not recommend…, better avoid …)，喜欢(be favor of, like, prefer)，一般态度(it’s ok, but…)，不喜欢(dislike)，必须( must, it is necessary…)，依情况而定( it depends)，没必要( not necessary)，等等。</text>
+          </view>
+        </scroll-view>
+
+    </view>
+</view>
+
+<view class="control-button" style="top:{{cbtop}};left:{{cbleft}}">
+  <button type="primary" bindtouchstart="mytouchstart" bindtouchmove="mytouchmove" bindtouchend='mytouchend'>{{cpage}}</button>
+</view>
+
+
+<view style="background:#D5F3F4;">
+<view class="content">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:{{ah}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item bindtouchstart="vtouchstart" bindtouchend='vtouchend'data-param='{{item}}'>
+        <scroll-view class="answer" scroll-x="false" scroll-y="true" style='height:{{ah}}'>
+
+          <!-- start -->
+          <view><text>41. A. principle       B. habit          C. weaker        D. power</text></view>
+<view><text>42. A. parties       B. races          C. countries       D. ages</text></view>
+<view><text>43. A. working       B. living          C. playing        D. going</text></view>
+<view><text>44. A. confidence       B. interest   C. anxiety          D. sorrow</text></view>
+<view><text>45. A. same          B. extra       C. funny       D. expensive</text></view>
+<view><text>46. A. well-organized  B. colorfully-printed C. newly- collected    D. half-filled</text></view>
+<view><text>47. A. broad           B. passing     C. different          D. main</text></view>
+<view><text>48. A. silently       B. impatiently       C. gladly    D. worriedly</text></view>
+<view><text>49. A. promise   B. burden            C. right             D. game</text></view>
+<view><text>50. A. courage         B. calmness        C. confusion         D. excitement</text></view>
+<view><text>51. A. graduation       B. independence      C. responsibility     D. success</text></view>
+<view><text>52. A. children      B. students       C. adults      D. retirees</text></view>
+<view><text>53. A. carefully      B. eagerly       C. nervously          D. bravely</text></view>
+<view><text>54. A. required      B. obtained    C. noticed          D.discovered</text></view>
+<view><text>55. A. need       B. learn    C. start       D. plan</text></view>
+<view><text>56. A. great          B. strong        C. difficult    D. correct</text></view>
+<view><text>57. A. time              B. money         C. skills        D. knowledge</text></view>
+<view><text>58. A. only         B. well             C. even       D. soon.</text></view>
+<view><text>59. A. lost         B. chose             C. left              D. quit</text></view>
+<view><text>60. A. pets         B. toys         C. friends       D. colleagues</text></view>
+          <!-- end -->
+        </scroll-view>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+</view>
+
+<!-- new function end -->

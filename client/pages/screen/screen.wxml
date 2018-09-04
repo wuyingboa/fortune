@@ -1,0 +1,40 @@
+<!-- new function -->
+<view bindtouchstart="vtouchstart" bindtouchend='vtouchend' data-param="question-text" style="background:#E8FFE8;" >
+  <view class='content'>
+        <scroll-view class="question" scroll-x="false" scroll-y="true" style='height:{{qh}}'>
+        <view wx:for="{{questions}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}">
+          <view>
+            <text>{{item}}</text>
+          </view>
+        </view>
+        </scroll-view>
+
+    </view>
+</view>
+
+<view class="control-button" style="top:{{cbtop}};left:{{cbleft}}">
+  <button type="primary" bindtouchstart="mytouchstart" bindtouchmove="mytouchmove" bindtouchend='mytouchend'>{{cpage}}</button>
+</view>
+
+
+<view style="background:#D5F3F4;">
+<view class="content">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:{{ah}}">
+    <block wx:for="{{background}}" wx:key="question">
+      <swiper-item bindtouchstart="vtouchstart" bindtouchend='vtouchend' data-param='{{item.label}}'>
+        <scroll-view class="answer" scroll-x="false" scroll-y="true" style='height:{{ah}}'>
+
+        <view><text>{{item.question}}</text></view>
+        <view wx:for="{{item.options}}" wx:key="*this" wx:for-index="an" wx:for-item="answer">
+          <text>{{answer}}</text>
+        </view>
+
+          
+        </scroll-view>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+</view>
+
+<!-- new function end -->

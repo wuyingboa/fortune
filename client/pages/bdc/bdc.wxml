@@ -1,0 +1,22 @@
+<import src="../../template/book-item/book-item.wxml" />
+<view class="container">
+<text class="text" hidden="{{!hiddenitem}}" >这本书还在路上……</text>
+  <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+    <view class="project-container">
+      <scroll-view hidden="{{hiddenitem}}" scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
+        class="list" bindscrolltolower="bindDownLoad" bindscroll="scroll">
+        <block wx:for="{{list}}" wx:for-item="itemName" wx:key="*this">
+          <view class="project-item"  bindtap="btnDetail" id="tap" data-hi="{{itemName.url}}">
+            <template is="bookItem" data="{{itemName}}" />
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class="body-view">
+        <loading hidden="{{hidden}}" bindchange="loadingChange">
+            加载中...
+        </loading>
+    </view>
+</view>

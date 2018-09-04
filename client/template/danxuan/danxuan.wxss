@@ -1,0 +1,15 @@
+/* template/danxuan/danxuan.wxss */
+
+.body {
+  margin: auto 20px;
+}
+.content {
+  margin-top:30px;
+}
+.question {
+  margin-top: 10px;
+}
+
+.answer {
+  margin-top: 10px;
+}

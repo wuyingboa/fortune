@@ -1,0 +1,17 @@
+<!--pages/start/start.wxml-->
+
+
+<view style='display:flex'>
+  <button class="m_button" bindtap="start_test">九型人格测试</button>
+  <button class="m_button" bindtap="start_float">测试浮层</button>
+</view>
+ <view style='display:flex'> 
+  <button class="m_button" bindtap="start_canvas">画图</button>
+  <button class="m_button" bindtap="start_screen">屏幕多多</button>
+</view> 
+
+ <view style='display:flex'> 
+  <button class="m_button" bindtap="start_et">做题</button>
+  <button class="m_button" bindtap="start_screen">屏幕多多</button>
+</view> 
+

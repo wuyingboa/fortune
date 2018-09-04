@@ -1,0 +1,12 @@
+<view class='body' bindtouchstart='vtouchstart' bindtouchend='vtouchend'>
+
+  <view class="desc">
+    <view class="hline"></view>
+    <text class="title-desc">{{item.type}}</text>
+  </view>
+  <view class='content'>
+    <view class="container">
+      <text class="text-left">{{item.desc}}</text>
+    </view>
+  </view>
+</view>

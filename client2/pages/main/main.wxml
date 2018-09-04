@@ -1,0 +1,16 @@
+
+<view>
+  <view class="content">
+    <view class='num-size one-content'> {{ num }} / 180</view>
+    <view class='one-content one-content-size'>
+      <!-- 我是一个天生的推销员，说服别人对我来说是一件轻易的事。 -->
+      {{ msg }}
+    </view>
+  </view>
+<!-- <radio-group class="radio-group">
+  <radio>是</radio>
+  <radio>不是</radio>
+</radio-group> -->
+<button id="is_1" class="m_but-1" bindtap="clickMe">是</button>
+<button id="is_not_2" class="m_but-2" bindtap="clickMe">不是</button>
+</view>

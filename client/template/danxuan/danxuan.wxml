@@ -1,0 +1,16 @@
+
+<view class="body" bindtouchstart="vtouchstart" bindtouchend='vtouchend'>
+<view>2018年普通高等学校招生全通统一考试...<i>{{tihao}}</i>/<i>{{total_tihao}}</i>
+</view>
+
+<view class="content" wx:for="{{items}}" wx:for-index="index" wx:key="questions">
+<view class="question" wx:for="{{item.questions}}" wx:for-index="qu" wx:for-item="question" wx:key="*this">
+  <view>{{question}}</view>
+</view>
+
+<view class="answer" wx:for="{{item.answers}}" wx:for-index="an" wx:for-item="answer" wx:key="*this" >
+  <view><i>{{an}}  </i><i>{{answer}}</i></view>
+
+</view>
+</view>
+</view>

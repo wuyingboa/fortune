@@ -1,0 +1,9 @@
+/* template/title/title.wxss */
+
+@import "../../pages/et/et.wxss";
+
+.body {
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}

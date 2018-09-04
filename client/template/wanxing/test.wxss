@@ -1,0 +1,18 @@
+/* template/wanxing/test.wxss */
+
+.bc_green {
+  background: green;
+}
+.bc_red {
+  background: red;
+}
+
+.bc_yellow {
+  background:yellow;
+}
+.bc_blue {
+  background:blue;
+}
+.scroll-view-item {
+  height: 100px;
+}

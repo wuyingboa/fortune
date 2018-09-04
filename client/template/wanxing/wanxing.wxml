@@ -1,0 +1,61 @@
+<view>
+  <view>
+    <text>(材料)</text>
+  </view>
+  <view>
+    <text>{{content_title}}</text>
+  </view>
+  <scroll-view class="content" bindtap="show" scroll-y="true" style="height:{{content_height}}" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view class="paragraph" wx:for="{{paras}}" wx:for-index="idx" wx:for-item="item" wx:key="id">
+
+      <view wx:for="{{item}}" wx:for-index="word_index" wx:for-item="word" wx:key="*this" class="paragraph">
+
+        <view wx:if="{{word == '__'}}" catchtap='toshow' id="word_{{word_index}}">
+          {{word}}
+        </view>
+        <view data-param="{{word}}" wx:else> {{word}}</view>
+
+      </view>
+    </view>
+
+</scroll-view>
+
+</view>
+
+<!--  triangle -->
+<view class="sanjiao_up" hidden="{{flag}}" style="top:{{top_tri}};left:{{left_tri}};"></view>
+<!-- 弹出层内容，其中的“我知道”中绑定让弹出层消失的函数：bindtap="hide" -->
+<view class="modal-box" hidden="{{flag}}" style="top:{{top}};left:{{left}};">
+
+
+  <view class="modal-body">
+    <view class="modal-content">
+
+      <view class="word-mean">
+        <view class="yinbiao">英[this] 美[that]</view>
+        <view class="word-mean-item">{{mean}}</view>
+        <view class="word-mean-item">pron. 这，这个；这事，这人；这时；下面所说的事；</view>
+        <view class="word-mean-item">adj. 这，这个；这事，这人；这时；下面所说的事；</view>
+        <view class="word-mean-item">adv. 这样地；就是这样；这么地；</view>
+        <view class="favourite" bindtap='favourite'>收藏到词库</view>
+
+      </view>
+    </view>
+
+  </view>
+</view>
+
+
+
+<!-- <view class="commodity_screen_show" bindtap="hideModal" wx:if="{showModalStatus}}">abcd</view>
+<view class="commodity_screen_hide" bindtap="showModal" wx:if="{showModalStatus}}">我就是要展示，哈哈哈</view> -->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+
+  <view>A.It benefited from the contribution of immigrants.</view>
+  <view>B.It started when people's income was relatively high.</view>
+  <view>C.It benefited from the accelerated rise in productivity.</view>
+  <view>D.It started with the improvement of peopled livelihood.</view>
+
+
+
+</view>

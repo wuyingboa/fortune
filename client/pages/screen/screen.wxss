@@ -1,0 +1,45 @@
+/* pages/screen/screen.wxss */
+
+@import "../../common/lib/weui.wxss";
+
+button{
+  margin-bottom: 30rpx;
+  height:29px;
+  width:72px;
+  font-size:12px;
+  text-align: middle;
+
+}
+button:last-child{
+   margin-bottom: 0; 
+}
+.page-section-title{
+  padding: 0;
+}
+.swiper-item{
+  display: block;
+  /* height: 150px; */
+}
+.page-section-title{
+  margin-top: 60rpx;
+  position: relative;
+}
+.info{
+  position: absolute;
+  right: 0;
+  color: #353535;
+  font-size: 30rpx;
+}
+.page-foot{
+  margin-top: 50rpx;
+}
+
+.content {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right:10px; 
+}
+.control-button {
+  position: fixed;
+  z-index: 1;
+}

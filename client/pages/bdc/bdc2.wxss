@@ -1,0 +1,39 @@
+/* pages/bdc/bdc2.wxss */
+
+swiper.outer {
+    /* height: calc(100vh); */
+    height: 900px;
+    background-color: red;
+}
+
+.word-list {
+  font-size: 13px;
+  display:flex;
+  margin-left: 5px;
+  margin-top: 1px;
+  margin-right: 5px;
+
+  overflow: hidden;
+}
+
+.word {
+  width: 95%;
+}
+
+.shiyi {
+  width: 100%;
+  background: gray;
+}
+
+.voice {
+  width: 5%;
+  margin-left: 10px;
+}
+.word-item {
+  background: rgb(250, 238, 238);
+}
+
+.split-line {
+  height: 1px;
+  background: blue;
+}

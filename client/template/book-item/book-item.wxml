@@ -1,0 +1,14 @@
+<template name="bookItem">
+  <view class="item-head" hidden="true">
+     <!--<view class="post-title"><text>{{itemName.title}}</text></view>-->
+  </view>
+  <view class="project-img">
+    <image src="{{itemName.img}}"></image>
+  </view>
+  <view class="item-body">
+   <view class="post-title"><text>{{itemName.title}}</text></view>
+    <view class="project-desc">{{itemName.info}}</view>
+    <view class="project-title" wx:if="{{itemName.review}}"><label>{{itemName.review}}</label></view>
+    <view class="project-title" wx:if="{{itemName.time}}">距离还书时间还有:<label>{{itemName.time}}</label>天</view>
+  </view>
+</template>

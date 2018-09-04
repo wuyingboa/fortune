@@ -1,0 +1,12 @@
+<!--pages/result/result.wxml-->
+
+<view class="content">
+<view class="content_index" wx:for-items = "{{con}}" wx:for-item="item" wx:key="index">
+{{ index }}
+<view class="content_item" wx:for-items="{{con[index]}}" wx:for-item="subItem" wx:key="subKey">
+  {{ans[subItem]}}
+</view>
+  
+</view>
+<button class="m_button" bindtap='analysis'>详细解释</button>
+</view>

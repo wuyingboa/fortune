@@ -1,0 +1,56 @@
+<view class="weui-flex titles">
+    <block wx:for="{{text_title}}" wx:key="*this">
+        <text class="{{index === swiperSelected.index ? 'selected' : ''}}" data-id="{{index}}" bindtap="bindTitleTap">{{item}}</text>
+    </block>
+    <view class="title-slider" style="width: {{titleSlider.width}}%; left: {{titleSlider.left}}%;"></view>
+</view>
+<swiper class="outer" current="{{swiperSelected.outer}}">
+    <swiper-item class="outer">
+        <view class="weui-cells">
+            <view class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">共享标题</view>
+            </view>
+        </view>
+        <view class="swiper-wrap">
+            <swiper class="inner" current="{{swiperSelected.inner}}">
+                <swiper-item>
+                    <scroll-view scroll-y="true" enable-back-to-top="true">
+                        <view class="placeholder"></view>
+                        <view class="weui-cells">
+                            <view class="weui-cell">
+                                <view class="weui-cell__bd">测试1</view>
+                            </view>
+                        </view>
+                    </scroll-view>
+                </swiper-item>
+                <swiper-item  catchtouchmove="forbidSwiperMove" data-param="{{swiperSelected.outer}}">
+                    <scroll-view scroll-y="true" enable-back-to-top="true">
+                        <view class="placeholder"></view>
+                        <view class="weui-cells">
+                            <view class="weui-cell">
+                                <view class="weui-cell__bd">测试2</view>
+                            </view>
+                        </view>
+                    </scroll-view>
+                </swiper-item>
+            </swiper>
+        </view>
+    </swiper-item>
+    <swiper-item class="outer">
+        <scroll-view scroll-y="true" enable-back-to-top="true">
+            <view class="placeholder"></view>
+            <view class="weui-cells">
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">测试3讲述以下微信小程序中的冒泡事件和非冒泡 - CSDN博客
+2017年12月26日 - view id='outter' bindtap="outterTap"> outter view id='middle' bindtap='middleTap'> middle view id='inner' bindtap='innerTap'> inner view> vi...
+https://blog.csdn.net/chen5298... 
+ - 百度快照
+微信小程序:冒泡事件及其阻止 - CSDN博客
+2017年12月8日 - 微信小程序:冒泡事件及其阻止 阅读量:5932 Swift 点击按钮两张图片之间来回切换 阅读量:414 微信小程序采坑(1):富文本的一些问题 阅读量:300 Swift...
+https://blog.csdn.net/qq_36002... 
+ - 百度快照</view>
+                </view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+</swiper>

@@ -1,0 +1,28 @@
+<view>
+  <swiper class="outer" bindchange="onSwitch">
+
+    <block wx:for="{{background}}" wx:for-item="wordPage" wx:key="{{wordPage.id}}">
+    
+      <swiper-item current="{{cpage}}">
+      
+      <scroll-view scroll-y class="word-item">
+        <block wx:for="{{wordPage.list}}" wx:for-item="itemName" wx:key="*this">
+          
+          <view class="word-list">
+            <view class="word" data-hi="{{itemName.word}}">
+              {{itemName.word}}
+            </view>
+            
+            <view class="voice">voice</view>
+          </view>
+          <view class="shiyi">释义</view>
+          <view class="split-line"></view>
+        </block>
+        </scroll-view>
+      </swiper-item>
+      
+    </block>
+
+  </swiper>
+
+</view>
